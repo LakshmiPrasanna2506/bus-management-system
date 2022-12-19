@@ -6,7 +6,8 @@ from tkcalendar import DateEntry  # pip install tkcalendar
 import sqlite3
 import sys
 import os
-os.environ.__setitem__('DISPLAY',':0.0')
+os.system("Xvfb :1 -screen 0 720x720x16 &")
+os.environ['DISPLAY']=":1.0"
 
 # Creating the universal font variables
 headlabelfont = ("Noto Sans CJK TC", 15, 'bold')
