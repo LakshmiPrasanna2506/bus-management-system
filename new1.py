@@ -4,6 +4,9 @@ import tkinter.messagebox as mb
 from tkinter import ttk
 from tkcalendar import DateEntry  # pip install tkcalendar
 import sqlite3
+import sys
+import os
+os.environ.__setitem__('DISPLAY',':0.0')
 
 # Creating the universal font variables
 headlabelfont = ("Noto Sans CJK TC", 15, 'bold')
