@@ -11,7 +11,7 @@ labelfont = ('Garamond', 14)
 entryfont = ('Garamond', 12)
 
 # Connecting to the Database where all information will be stored
-connector = sqlite3.connect('BusManagement.db')
+connector = sqlite3.connect(r'BusManagement.db')
 cursor = connector.cursor()
 
 connector.execute(
